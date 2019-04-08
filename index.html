@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
+  </head>
+  <body>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="images/index/u5.png" alt="" />
+          <a href="javascript:;" class="jump">跳过</a>
+        </div>
+        <div class="swiper-slide">
+          <img src="images/index/u7.png" alt="" />
+          <a href="javascript:;" class="jump">跳过</a>
+        </div>
+        <div class="swiper-slide">
+          <img src="images/index/u9.png" alt="" />
+          <a href="javascript:;" class="jump">跳过</a>
+        </div>
+        <div class="swiper-slide last">
+          <img src="images/index/u10.png" alt="" />
+          <a href="javascript:;" class="go">来到一处</a>
+        </div>
+      </div>
+    </div>
+    <script src="js/zepto.main.js"></script>
+    <script src="js/touch.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script>
+      document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 7.5 + "px";
+      var mySwiper = new Swiper(".swiper-container", {
+        direction: "horizontal", // 垂直切换选项
+      })
+      $('.jump').click(function(){
+        var num = $(this).parent().width() * 3
+        console.log(num);        
+        $(this).parent().removeClass('swiper-slide-active')
+        $('.last').addClass('swiper-slide-active')
+        $('.swiper-wrapper').css('transform','translate3d(-'+num+'px, 0px, 0px)')
+      })
+      $('.go').tap(function(){
+        window.location.href = './login.html'
+      })
+    </script>
+  </body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/iconfont.css" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="stylesheet" href="css/radio.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <span class="iconfont icon-houtui tui"></span>
+        <div class="fabu">电台</div>
+      </header>
+      <section>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/radio/u124.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/radio/u126.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/radio/u128.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/radio/u130.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="menu">
+          <div class="tuijian">
+            <h4>推荐</h4>
+            <p></p>
+          </div>
+          <div class="fenlei">
+            <h4>分类</h4>
+            <p></p>
+          </div>
+        </div>
+        <div class="neirong">
+            <h4>良品</h4>
+            <div class="name">
+              <span>HWZWSWS</span>
+              <img src="images/radio/liao3.png" alt="" />
+            </div>
+            <div class="inner">
+              <div class="i-left">
+                <h4>有点主见不好么？</h4>
+                <p>“有几次我都想对他们说：滚！我不需要他们，每次找了他们之后</p>
+              </div>
+              <div class="i-right">
+                <img src="images/radio/p11_08.png" alt="" />
+              </div>
+            </div>
+            <div class="di">
+              <div class="shijian">05-20 20:56</div>
+              <div class="yidui">
+                <span class="iconfont icon-yanjing"></span>
+                <span>1.8k</span>
+                <span class="iconfont icon-xin"></span>
+                <span class="xin-num">50</span>
+                <span class="iconfont icon-pinglun"></span>
+                <span>6</span>
+              </div>
+            </div>
+          </div>
+          <div class="neirong">
+              <h4>最新发声</h4>
+              <div class="name">
+                <span>HWZWSWS</span>
+              <img src="images/radio/liao3.png" alt="" />                
+              </div>
+              <div class="inner">
+                <div class="i-left">
+                  <h4>乍见之欢 久处不厌</h4>
+                  <p>我忽然在想，身边什么人会让人有这样的感觉，处于一种恰恰欢喜舒</p>
+                </div>
+                <div class="i-right">
+                  <img src="images/radio/p11_08.png" alt="" />
+                </div>
+              </div>
+              <div class="di">
+                <div class="shijian">05-20 20:56</div>
+                <div class="yidui">
+                  <span class="iconfont icon-yanjing"></span>
+                  <span>1.8k</span>
+                  <span class="iconfont icon-xin"></span>
+                  <span class="xin-num">50</span>
+                  <span class="iconfont icon-pinglun"></span>
+                  <span>6</span>
+                </div>
+              </div>
+            </div>
+      </section>
+    </div>
+    <script src="js/zepto.main.js"></script>
+    <script src="js/touch.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script>
+      document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 7.5 + "px";
+      $(".tui").tap(function() {
+        window.location.href = "./home.html";
+      });
+      var mySwiper = new Swiper(".swiper-container", {
+        direction: "horizontal"
+      });
+    </script>
+  </body>
+</html>

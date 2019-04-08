@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/iconfont.css" />
+    <!-- <link rel="stylesheet" href="css/iconfont1.css" /> -->
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="time">
+          <span>1</span>
+          <span>1</span>
+        </div>
+        <a href="javascript:;" class="sou">搜索</a>
+      </header>
+      <section>
+        <img src="images/home/home-banner.jpg" alt="" class="b-img" />
+        <div class="menu">
+          <span class="iconfont icon-yinle"></span>
+          <span class="iconfont icon-z"></span>
+          <span class="iconfont icon-wenzhang1"></span>
+          <span class="iconfont icon-diantaizhibo"></span>
+          <span class="iconfont icon-paihangbang"></span>
+        </div>
+        <div class="neirong">
+          <h4>浮世绘</h4>
+          <div class="name">
+            <span>一处精选</span>
+            <img src="images/home/n1.png" alt="" />
+          </div>
+          <div class="inner">
+            <div class="i-left">
+              <h4>老了又怎么，又不耽误好好活着</h4>
+              <p>1 《奇葩说》第四期的问题是：“如果你的父母提出和</p>
+            </div>
+            <div class="i-right">
+              <img src="images/home/n2.jpg" alt="" />
+            </div>
+          </div>
+          <div class="di">
+            <div class="shijian">05-20 20:56</div>
+            <div class="yidui">
+              <span class="iconfont icon-yanjing"></span>
+              <span>1.8k</span>
+              <span class="iconfont icon-xin"></span>
+              <span class="xin-num">50</span>
+              <span class="iconfont icon-pinglun"></span>
+              <span>6</span>
+            </div>
+          </div>
+        </div>
+        <div class="neirong">
+          <h4>浮世绘</h4>
+          <div class="name">
+            <span>毛毛</span>
+            <img src="images/home/mao.png" alt="" />
+          </div>
+          <div class="inner">
+            <div class="i-left">
+              <h4>我更喜欢努力的自己</h4>
+              <p>你知道，故事的结尾并不重要，生活唯一确保我们的就光芒。</p>
+            </div>
+            <div class="i-right">
+              <img src="images/home/u1513_09.jpg" alt="" />
+            </div>
+          </div>
+          <div class="di">
+            <div class="shijian">05-20 20:56</div>
+            <div class="yidui">
+              <span class="iconfont icon-yanjing"></span>
+              <span>1.8k</span>
+              <span class="iconfont icon-xin"></span>
+              <span class="xin-num">50</span>
+              <span class="iconfont icon-pinglun"></span>
+              <span>6</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="home"></div>
+        <div class="msg"></div>
+        <div class="new"></div>
+        <div class="huati"></div>
+        <div class="my"></div>
+      </footer>
+    </div>
+    <script src="js/zepto.main.js"></script>
+    <script src="js/touch.js"></script>
+    <script src="js/footer.js"></script>
+    <script>
+      document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 7.5 + "px";
+      function time() {
+        var date = new Date();
+        var hour = date.getHours();
+        var min = date.getMinutes();
+        if (min < 10) {
+          min = "0" + min;
+        }
+        if (hour < 12) {
+          $(".time span")
+            .eq(0)
+            .text("AM");
+          $(".time span")
+            .eq(1)
+            .text(hour + ":" + min);
+        } else if (hour > 12) {
+          var num = hour - 12;
+          $(".time span")
+            .eq(0)
+            .text("PM");
+          $(".time span")
+            .eq(1)
+            .text(num + ":" + min);
+        } else if (hour === 12) {
+          $(".time span")
+            .eq(0)
+            .text("PM");
+          $(".time span")
+            .eq(1)
+            .text(hour + ":" + min);
+        }
+      }
+      var run = setInterval(time, 1000);
+      time();
+      var isXin = false;
+      $(".icon-xin").click(function() {
+        isXin = !isXin;
+        var num = $(this)
+          .siblings(".xin-num")
+          .text();
+
+        if (isXin) {
+          num++;
+          $(this).css({ color: "red" });
+          $(this)
+            .siblings(".xin-num")
+            .text(num);
+        } else {
+          num--;
+          $(this).css({ color: "#ccc" });
+          $(this)
+            .siblings(".xin-num")
+            .text(num);
+        }
+      });
+      $('.sou').tap(function(){
+        window.location.href = './search.html'
+      })
+      $('.icon-diantaizhibo').tap(function(){
+        window.location.href = './radio.html'
+      })
+    </script>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/iconfont.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/new.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <span class="iconfont icon-houtui tui"></span>
+        <div class="fabu">公开发布</div>
+      </header>
+      <section>
+        <div>
+          <span>“我一直在这里，等风也等你。”</span>
+          <span>一处</span>
+        </div>
+        <textarea name="" id="">学习学到忘记看手机，这种感觉超爽拿起手机发现时间才过两分钟，惆怅</textarea>
+        <span class="gongkai">公开</span>
+      </section>
+      <footer>
+          <span class="iconfont icon-54"></span>
+          <span class="iconfont icon-biaoqing"></span>
+          <input type="text" placeholder="输入文字">
+          <span>语音</span>
+      </footer>
+    </div>
+    <script src="js/zepto.main.js"></script>
+    <script src="js/touch.js"></script>
+    <script>
+      document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 7.5 + "px";
+        $('.tui').tap(function(){
+          window.location.href = './home.html'
+        })
+        var isGongkai = true
+        $('.gongkai').tap(function(){
+          isGongkai = !isGongkai
+          if(isGongkai){
+            $(this).text('公开')
+            $('.fabu').text('公开发布')
+          }else{
+            $(this).text('悄悄话')
+            $('.fabu').text('匿名发布')
+          }
+        })
+        $('.fabu').tap(function(){
+          isGongkai = !isGongkai
+          if(isGongkai){
+            $(this).text('公开公开')
+            $('.gongkai').text('公开')
+          }else{
+            $(this).text('匿名发布')
+            $('.gongkai').text('悄悄话')
+          }
+        })
+    </script>
+  </body>
+</html>

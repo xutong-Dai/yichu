@@ -1,0 +1,132 @@
+.wrap{
+  width: 100%;
+  height: 100vh;
+  background-image: url('../images/login/u14.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+.wrap .back{
+  display: block;
+  position: absolute;
+  top: 0.7rem;
+  left:0.5rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  line-height: 0.5rem;
+  text-align: center;
+  font-size: .5rem;
+  color: #fff;
+}
+.wrap .zhaohui{
+  display: block;
+  position: absolute;
+  top: 0.7rem;
+  right:0.3rem;
+  width: 1.5rem;
+  height: 0.5rem;
+  line-height: 0.5rem;
+  text-align: center;
+  font-size: .3rem;
+  color: #eee;
+}
+.wrap .login{
+  width: 4rem;
+  height: 3.9rem;
+  position: absolute;
+  top: 35%;
+  left: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wrap .login .username{
+  width: 100%;
+  height: 0.5rem;
+  display: flex;
+  padding-left: .44rem;
+  padding-right: .2rem;
+}
+.wrap .login .username input{
+  height: .5rem;
+  border: 0;
+  flex-grow: 1;
+  outline: 0;
+  background-color:transparent;
+  border-bottom: 1px solid #eee;
+  color:#eee;
+  font-size: .16rem;
+}
+.wrap .login .password{
+  width: 100%;
+  height: 0.5rem;
+  display: flex;
+  padding-left: .44rem;
+  padding-right: .2rem;
+  margin-top: .4rem;
+}
+.wrap .login .password input{
+  height: .5rem;
+  border: 0;
+  flex-grow: 1;
+  outline: 0;
+  background-color:transparent;
+  border-bottom: 1px solid #eee;
+  color:#eee;
+  font-size: .16rem;
+}
+input::-webkit-input-placeholder{
+  color:#eee;
+}
+.wrap .login .btn{
+  width: 95%;
+  height: .74rem;
+  border: 1px solid #fff;
+  padding: 3px;
+  border-radius: .37rem;
+  display: flex;
+  margin-top: .5rem;
+}
+.wrap .login .btn button{
+  border: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(240,240,240,0.4);
+  border-radius: .34rem;
+  outline: 0;
+  font-size: .35rem;
+  color:#fff;
+}
+
+.wrap .login .reg{
+  margin-top: .4rem;
+  font-size: .16rem;
+  color:#eee;
+}
+.wrap .lianjie{
+  width: 4rem;
+  position: absolute;
+  top: 75%;
+  left: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+}
+.wrap .lianjie a{
+  /* display: block; */
+  width: .8rem;
+  line-height: .8rem;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .1rem;
+  -webkit-tap-highlight-color:transparent;
+
+}
+.wrap .lianjie a img{
+  width: 100%;
+  height: 100%;
+}

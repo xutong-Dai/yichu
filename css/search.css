@@ -1,0 +1,101 @@
+.wrap{
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/home/search.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.zhao{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;left: 0;
+  background-color: rgba(200, 200, 200, 0.3);
+  z-index: 0;
+}
+.wrap .inner{  
+  width: 100%;
+  position: absolute;
+  top: 0;left: 0;
+  z-index: 1;
+  padding-top: 5%;
+}
+.wrap .inner header{
+  width: 94%;
+  padding: 0 3%;
+  display: flex;
+  align-items: center;
+}
+.wrap .inner header .shuru{
+  width: 85%;
+  height: 0.6rem;
+  position: relative;
+  flex-shrink: 1;
+}
+.wrap .inner header .shuru input{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 90%;
+  padding-left: 10%;
+  line-height: .56rem;
+  outline: 0;
+  border: 0;
+  border-radius: 5px;
+  background-color: #ececec;
+  color:#209a8b;
+  font-size: .26rem;
+}
+.wrap .inner header .shuru span{
+  position: absolute;
+  left: 2%;
+  top: .12rem;
+}
+.wrap .inner header a{
+  width: 15%;
+  text-align: center;
+  font-size: .24rem;
+  color: #eee;
+}
+input::-webkit-input-placeholder{
+  color:#a7a7a7;
+  font-size: .26rem;
+}
+.inner .main{
+  width: 94%;
+  padding-left: 3%;
+  padding-right: 3%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: .2rem;
+}
+.inner .main>div{
+  width: 3.44rem;
+  line-height: .75rem;
+  font-size: .26rem;
+  background-color:#f7fbfa;
+  color:#9e9e9e;
+  text-align: center;
+  border-radius: 5px;
+}
+.inner .main .neirong{
+  color:#f8fefa;
+  background-color: #35efca;
+}
+.inner .history{
+  width: 100%;
+  line-height: 0.94rem;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+}
+.inner .history span{
+  font-size: 0.26rem;
+  color:#ccc;
+}
+.inner .history span:first-child{
+  margin-left: 0.44rem;
+}
+.inner .history span:last-child{
+  margin-left: .4rem;
+}

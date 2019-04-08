@@ -1,0 +1,168 @@
+.wrap{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+section{
+  width: 100%;
+  flex-grow: 1;
+  overflow: auto;
+  /* background-color: #fbfbfb; */
+  margin-top: 10px;
+}
+footer .home{
+  background-image: url(../images/home/home1.png);
+}
+footer .my{
+  background-image: url(../images/home/my2.png);
+}
+header{
+  width: 100%;
+  height: 4.2rem;
+  background-image: url(../images/personal/bg.png);
+  background-size: 100% 100%;
+  background-repeat: repeat-x;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  box-shadow: 0 3px 3px 2px #eee;
+  /* padding-bottom: 10px; */
+}
+header .top{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  font-size: .32rem;
+  margin-top: 0.5rem;
+}
+header .top span:first-child{
+  margin-left: .3rem;
+}
+
+header .top span:last-child{
+  margin-right: .3rem;
+}
+header .mid{
+  width: 100%;
+  left: 1.33rem;
+  display: flex;
+  margin-top: 0.4em;
+}
+header .mid img{
+  width: 1.27rem;
+  height: 1.27rem;
+  border: 3px solid rgba(255, 255, 255, .4);
+  border-radius: 50%;
+  margin-left: 0.6rem;
+}
+header .mid .xinxi{
+  width: 100%;
+  padding: .2rem 0;
+  margin-left: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+header .mid .xinxi span:first-child{
+  font-size: .26rem;
+  color:#fff;
+  font-weight: bold;
+}
+header .mid .xinxi span:last-child{
+  font-size: 0.24rem;
+  color:#08b0a3;
+}
+header .bottom{
+  width: 100%;
+  margin-top: 0.4rem;
+  display: flex;
+  justify-content: space-around;
+}
+header .bottom .me{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header .bottom .me span:first-child{
+  font-size: .24rem;
+  color: #02a280;
+  font-weight: bold;
+  margin-bottom: .1rem;
+}
+header .bottom .me span:last-child{
+  font-size: 0.18rem;
+  color: #0bbea1;
+}
+section .my-yichu{
+  width: 6.9rem;
+  padding: .4rem .3rem .3rem;
+  /* border-bottom: 12px solid #fbfbfb; */
+}
+section .my-yichu .head{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.26rem;
+  margin-bottom: .24rem;
+}
+section .my-yichu .pic{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+section .my-yichu .pic>div{
+  flex-shrink: 1;
+  display: flex;
+  flex-direction: column;
+}
+section .my-yichu .pic>div+div{
+  margin-left:.3rem;
+}
+section .my-yichu .pic>div img{
+  width: 100%;
+}
+section .my-yichu .pic>div span{
+  font-size: 0.26rem;
+  margin-top: .2rem;
+}
+section .per{
+  width: 7.2rem;
+  padding-left: 0.3rem;
+  border-top: 12px solid #fbfbfb;
+}
+section .per>div{
+  width: 100%;
+  height: 0.9rem;
+  display: flex;
+  align-items: center;
+}
+section .per>div img{
+  width: 0.42rem;
+  height: 0.42rem;
+}
+section .per>div h4{
+  font-size: 0.28em;
+  color:#2b2b2b;
+  margin-left: .2rem;
+  margin-right: 0.2rem;
+}
+section .per>div p{
+  font-size: .24rem;
+  color: #929292;
+  width: 4.6rem;
+}
+section .per>div .number{
+  font-size: 0.24rem;
+  color: #939393;
+  text-align: right;
+  width: .6rem;
+}
+section .per>div span{
+  font-size: 0.24rem;
+  color: #929292;
+  margin-left: .1rem;
+}
+section .per>div+div{
+  border-top: 1px solid #ccc;
+}

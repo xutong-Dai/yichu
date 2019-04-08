@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+  <div class="wrap">
+    <span class="back">×</span>
+    <span class="zhaohui">找回密码</span>
+    <div class="login">
+      <div class="username">
+        <input type="text" placeholder="请输入邮箱地址 /手机号">
+      </div>
+      <div class="password">
+        <input type="password" placeholder="请输入密码">
+      </div>
+      <div class="btn">
+        <button>登陆</button>
+      </div>
+      <span class="reg">用户注册</span>
+    </div>
+    <div class="lianjie">
+      <a href="javascript:;">
+        <img src="images/login/weibo.png" alt="">
+      </a>
+      <a href="javascript:;">
+        <img src="images/login/changyonglogo28.png" alt="">
+      </a>
+      <a href="javascript:;">
+        <img src="images/login/qq.png" alt="">
+      </a>
+    </div>
+  </div>
+  <script src="js/zepto.main.js"></script>
+  <script src="js/touch.js"></script>
+  <script>
+  document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 7.5 + "px";
+    $('.back').tap(function(){
+      window.history.back()
+    })
+    $('.btn button').tap(function(){
+      window.location.href = './home.html'
+    })
+  </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+.wrap{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+header{
+  background-image: url(../images/msg/u48.png);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrap header span{
+  width: 0.36rem;
+  height: 0.36rem;
+  font-size: .36rem;
+  color:#0ba184;
+  margin-left: 0.3rem;
+}
+header .fabu{
+  width: 1.24rem;
+  line-height: 0.42rem;
+  font-size: 0.22rem;
+  border: 2px solid #12b191;
+  color:#12b191;
+  text-align: center;
+  border-radius: .21rem;
+  margin-right: 0.3rem;
+}
+section{
+  width:6.9rem;
+  padding: 0 .3rem;
+  flex-grow: 1;
+}
+section div{
+  width: 5.5rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 1.24rem;
+}
+section div span{
+  font-size: 0.36rem;
+  margin-bottom: 0.3rem;
+  color:#049979;
+}
+section textarea{
+  width: 6.5rem;
+  height: 6rem;
+  padding: .2rem;
+  resize: none;
+  outline: 0;
+  border:0;
+  background-color: #cdeae5;
+  border-radius: 10px;
+  font-size: 0.26rem;
+  color:#202020;
+}
+section .gongkai{
+  display: block;
+  width: 0.92rem;
+  line-height: .4rem;
+  text-align: center;
+  font-size: .26rem;
+  color: #049979;
+  border: 2px solid #049979;
+  border-radius: .2rem;
+  float: right;
+  margin-top: 0.1rem;
+}
+
+footer{
+  width: 6.9rem;
+  height: .94rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #9cd6ca;
+  flex-shrink: 0;
+  padding: 0 .3rem;
+}
+.wrap footer span{
+  font-size: 0.3rem;
+  color:#059979;
+  flex-shrink: 0;
+}
+.wrap footer span:nth-child(2){
+  margin: 0 .2rem;
+}
+.wrap footer .iconfont{
+  font-weight: bold;
+  font-size: 0.4rem;
+}
+.wrap footer input{
+  flex-grow: 1;
+  line-height: 0.44rem;
+  font-size: 0.26rem;
+  outline: 0;
+  border: 0;
+  color:#b0b0b0;
+}.wrap footer input::-webkit-input-placeholder{
+  font-size: 0.26rem;
+  color:#b0b0b0;
+}

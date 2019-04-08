@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/iconfont1.css">
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/chat.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="dynamic">
+          <span>动态</span>
+          <span>DYNAMIC</span>
+        </div>
+        <div class="chat">
+          <span>聊天</span>
+          <span>CHAT</span>
+        </div>
+      </header>
+      <section>
+        <div class="search">
+         <input type="text" placeholder="搜索联系人和动态">
+         <i class="iconfont icon-sousuo"></i>
+        </div>
+        <div class="people">
+          <img src="images/msg/liao1.png" alt="">
+          <div>
+            <div class="">
+              <span>通知</span>
+              <span>刚刚</span>
+            </div>
+            <p>“我喜欢春娇，我觉得她好，她什么都好。”</p>
+          </div>
+        </div>
+        <div class="people">
+            <img src="images/msg/liao2.png" alt="">
+            <div>
+              <div class="">
+                <span>一处小密</span>
+                <span>刚刚</span>
+              </div>
+              <p>“许多时候，说话，是一个面对自己的过程。我们在什么什么什么。”</p>
+            </div>
+          </div>
+          <div class="people">
+              <img src="images/msg/liao3.png" alt="">
+              <div>
+                <div class="">
+                  <span>通知</span>
+                  <span>刚刚</span>
+                </div>
+                <p>忘记心中绕，前缘尽勾销</p>
+              </div>
+            </div>
+            <div class="people">
+                <img src="images/msg/liao4.png" alt="">
+                <div>
+                  <div class="">
+                    <span>闪耀的宇宙碎片</span>
+                    <span class='one'>官方</span>
+                    <span>刚刚</span>
+                  </div>
+                  <p>“我喜欢春娇，我觉得她好，她什么都好hahahaahaha。”</p>
+                </div>
+              </div>
+              <div class="people">
+                  <img src="images/msg/liao1.png" alt="">
+                  <div>
+                    <div class="">
+                      <span>处方药</span>
+                      <span>一分钟前</span>
+                    </div>
+                    <p>“我喜欢春娇，我觉得她好，她什么都好。”</p>
+                  </div>
+                </div>
+                <div class="people">
+                    <img src="images/msg/liao3.png" alt="">
+                    <div>
+                      <div class="">
+                        <span>通知</span>
+                        <span>刚刚</span>
+                      </div>
+                      <p>“我喜欢春娇，我觉得她好，她什么都好。”</p>
+                    </div>
+                  </div>
+      </section>
+      <footer>
+        <div class="home"></div>
+        <div class="msg"></div>
+        <div class="new"></div>
+        <div class="huati"></div>
+        <div class="my"></div>
+      </footer>
+    </div>
+    <script src="js/zepto.main.js"></script>
+    <script src="js/touch.js"></script>
+    <script src="js/footer.js"></script>
+    <script>
+      document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 7.5 + "px";
+      $(".dynamic").tap(function() {
+        window.location.href = "./msgdontai.html";
+      });
+    </script>
+  </body>
+</html>

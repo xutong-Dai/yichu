@@ -1,0 +1,123 @@
+.wrap{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.wrap section{
+  width: 100%;
+  overflow: auto;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  align-items: center;
+}
+section .b-img{
+  display: block;
+  width: 100%;
+  height: 4.33rem;
+}
+section .menu{
+  width: 90%;
+  margin-top: .3rem;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow:2px 2px 1px 1px #ccc inset;
+  justify-content: space-around;
+  flex-shrink: 0;
+}
+section .menu span {
+  font-size: .4rem;
+  color: #aaa;
+}
+section .menu span:nth-child(1){
+  color:#54d4bb;
+}
+section .menu span:nth-child(2){
+  font-weight:bold;
+}
+section .neirong{
+  width: 90%;
+  height: 3.6rem;
+  position: relative;
+  margin-top: .4rem;
+  flex-shrink: 0
+}
+section .neirong>h4{
+  width: 0.86rem;
+  padding-left: .1rem;
+  line-height: 0.32rem;
+  border-left:2px solid #54d4bb;
+  color:#54d4bb;
+  font-size: .2rem;
+  margin-top: .1rem;
+}
+section .neirong .name{
+  width: 2rem;
+  line-height: .52rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: .22rem;
+  display: flex;
+  justify-content: flex-end;
+}
+section .neirong .name img{
+  width: 0.52rem;
+  height: 0.52rem;
+}
+section .neirong .inner{
+  width: 100%;
+  height: 2.2rem;
+  margin-top: .3rem;
+  display: flex;
+  align-items: center;
+}
+section .neirong .inner>div{
+  width: 50%;
+  height: 100%;
+}
+section .neirong .inner .i-left{
+  font-size: .2rem;
+  padding: .1rem .4rem .1rem .1rem;
+}
+section .neirong .inner .i-left h4{
+  line-height: .42rem;
+  font-size: .3rem;
+  color: #202020;
+}
+section .neirong .inner .i-left p{
+  font-size: .24rem;
+  color: #6a6a6a;
+  margin-top: .36rem;
+  line-height: .44rem;
+}
+section .neirong .inner .i-right{
+  height: 80%;
+}
+section .neirong .inner .i-right img{
+  width: 100%;
+  height: 100%;
+}
+section .neirong .di{
+  width: 100%;
+  line-height: .6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section .neirong .di .shijian{
+  font-size: .2rem;
+  color:#ccc;
+}
+section .neirong .di .yidui{
+  width: 2rem;
+  font-size: .2rem;
+  color:#ccc;
+  display: flex;
+  justify-content: space-between;
+}

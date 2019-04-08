@@ -1,0 +1,93 @@
+.wrap{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+header{
+  background-image: url(../images/msg/u48.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section{
+  width: 100%;
+  flex-grow: 1;
+  overflow: auto;
+  background-color: #fbfbfb;
+}
+footer .home{
+  background-image: url(../images/home/home1.png);
+}
+footer .huati{
+  background-image: url(../images/home/huati2.png);
+}
+header .rec{
+  width: 0.58rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #00775b;
+  margin-right: 1.5rem;
+}
+header .rec span:nth-child(1){
+  font-size: .28rem;
+}
+header .rec span:nth-child(2){
+  font-size: .1rem;
+  margin-top: 0.1rem;
+}
+header .table{
+  width: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+header .table span:nth-child(1){
+  font-size: .28rem;
+}
+header .table span:nth-child(2){
+  font-size: .1rem;
+  margin-top: 0.1rem;
+}
+section .content{
+  width: 7rem;
+  height: 1.3rem;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  margin: 0 auto;
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+  margin-top: .24rem;
+  background-color: #fff;
+}
+section .content img{
+  width: 0.9rem;
+  height: 0.9rem;
+  margin-left: .2rem;
+  margin-right: .25rem;
+  flex-shrink: 0;
+}
+section .content>div{
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+section .content>div h4{
+  font-size: 0.28rem;
+  color:#626262;
+  margin-bottom: .16rem;
+  font-weight: bold;
+}
+section .content>div span{
+  font-size: .2rem;
+  color: #918f90;
+}
+section .content>span{
+  font-size: .3rem;
+  color:#bbded7;
+  flex-shrink: 0;
+  margin-right: .2rem;
+}

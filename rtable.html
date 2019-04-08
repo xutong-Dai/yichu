@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/table.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="rec">
+          <span>推荐</span>
+          <span>RECOMMEND</span>
+        </div>
+        <div class="table">
+          <span>圆桌</span>
+          <span>ROUND TABLE</span>
+        </div>
+      </header>
+      <section>
+        <div class="content">
+          <img src="./images/msg/liao1.png" alt="">
+          <div>
+            <h4>不想上班的理由</h4>
+            <span>还有3天结束</span>
+          </div>
+          <span>></span>
+        </div>
+        <div class="content">
+            <img src="./images/msg/liao2.png" alt="">
+            <div>
+              <h4>还有比普通朋友更伤人的么？</h4>
+              <span>还有3天结束</span>
+            </div>
+            <span>></span>
+          </div>
+          <div class="content">
+              <img src="./images/msg/liao3.png" alt="">
+              <div>
+                <h4>你已经足够好了</h4>
+                <span>还有3天结束</span>
+              </div>
+              <span>></span>
+            </div>
+            <div class="content">
+                <img src="./images/msg/liao4.png" alt="">
+                <div>
+                  <h4>稳住我们能赢</h4>
+                  <span>还有3天结束</span>
+                </div>
+                <span>></span>
+              </div>
+              <div class="content">
+                  <img src="./images/msg/liao1.png" alt="">
+                  <div>
+                    <h4>听说大家都考完了，我还有很多补考</h4>
+                    <span>还有3天结束</span>
+                  </div>
+                  <span>></span>
+                </div>
+                <div class="content">
+                    <img src="./images/msg/liao2.png" alt="">
+                    <div>
+                      <h4>你是不是膨胀了</h4>
+                      <span>还有3天结束</span>
+                    </div>
+                    <span>></span>
+                  </div>
+                  <div class="content">
+                      <img src="./images/msg/liao3.png" alt="">
+                      <div>
+                        <h4>注册会计师之路</h4>
+                        <span>还有3天结束</span>
+                      </div>
+                      <span>></span>
+                    </div>
+
+      </section>
+      <footer>
+        <div class="home"></div>
+        <div class="msg"></div>
+        <div class="new"></div>
+        <div class="huati"></div>
+        <div class="my"></div>
+      </footer>
+    </div>
+    <script src="js/zepto.main.js"></script>
+    <script src="js/touch.js"></script>
+    <script src="js/footer.js"></script>
+    <script>
+      document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 7.5 + "px";
+        $('.rec').tap(function(){
+      window.location.href = './topic.html'
+    })
+    </script>
+  </body>
+</html>

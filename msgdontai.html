@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/msgdongtai.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="dynamic">
+        <span>动态</span>
+        <span>DYNAMIC</span>
+      </div>
+      <div class="chat">
+        <span>聊天</span>
+        <span>CHAT</span>
+      </div>
+    </header>  
+    <section>
+      <div class="say">
+        <span>一起说：</span>
+        <div>
+          <div class="s-left">
+            <img src="./images/msg/xiaoxi_1.png" alt="">
+            <span></span>
+          </div>
+          <div class="s-right">
+            <h4>让毒鸡汤给你醒醒脑</h4>
+            <span>大家一起来聊聊</span>
+            <span>最新更新:</span>
+            <span>虽然你又胖又丑</span>
+          </div>
+        </div>
+      </div>
+      <div class="huixin">
+        <div class="hx-head">
+          <span>让他回信:</span>
+          <span>查看全部<span>></span></span>
+        </div>
+        <div class="en">
+          <div>
+            <img src="./images/msg/xiaoxi_03.png" alt="">
+            <h4>岁月寄歌</h4>
+            <span>我很碎碎念</span>
+          </div>
+          <div>
+              <img src="./images/msg/xiaoxi_04.png" alt="">
+              <h4>想三旬</h4>
+              <span>当树洞，我还好啦</span>
+          </div>
+          <div>
+              <img src="./images/msg/xiaoxi_03.png" alt="">
+              <h4>唐娇姑</h4>
+              <span>我很碎碎念</span>
+          </div>
+          <div>
+              <img src="./images/msg/xiaoxi_04.png" alt="">
+              <h4>想三旬</h4>
+              <span>当树洞，我还好啦</span>
+          </div>
+        </div>
+      </div>
+      <div class="zheshisha">
+        <div class="zss-head">
+          <div class="msg1">
+            <img src="./images/msg/liao3.png" alt="">
+            <span>不安海水</span>
+          </div>
+          <h4>SALES的语言艺术</h4>
+        </div>
+        <p>不必介意当下很苦，不必介意独自一人，不必介意只有好菜没有好酒，只需要往前走，做好每一个当下的选择，好好生活就好。一个人吃炸串，两个人吃火锅，各有各的精彩，重要的是人生这么美妙，来都来了，喜也好，疼也好，至少要痛快，至少你要变成你喜欢的那种人。</p>
+      </div>
+    </section>
+    <footer>
+      <div class="home"></div>
+      <div class="msg"></div>
+      <div class="new"></div>
+      <div class="huati"></div>
+      <div class="my"></div>
+    </footer>
+  </div>
+  <script src="js/zepto.main.js"></script>
+  <script src="js/touch.js"></script>
+  <script src="js/footer.js"></script>
+  <script>
+    document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 7.5 + "px";
+    $('.chat').tap(function(){
+      window.location.href = './chat.html'
+    })
+  </script>
+</body>
+</html>
